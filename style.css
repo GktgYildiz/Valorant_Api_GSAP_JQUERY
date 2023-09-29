@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500&family=Raleway:wght@100;200;300;400;500;700&display=swap");
+
+@font-face {
+  font-family: Tungsten;
+  font-weight: bold;
+  src: url("./img/tungsten-font/Tungsten-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Valorant;
+  font-weight: bold;
+  src: url("./img/Valorant\ Font.ttf") format("opentype");
+}
+
+/* @colors{
+    "#c7f458ff",
+"#d56324ff",
+"#3a2656ff",
+"#3a7233ff"
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to top, gray, rgb(22, 26, 35));
+}
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.cards {
+  display: grid;
+  /* grid-template-columns: 0.3fr 0.3fr 0.3fr 0.3fr; */
+  grid-template-columns: 16rem 16rem 16rem 16rem;
+  margin: 2rem;
+  gap: 4rem;
+}
+
+h1 {
+  color: #c7f458ff;
+  font-size: 3.5rem;
+  font-family: "Valorant";
+  font-weight: bold;
+  letter-spacing: 0.125rem;
+}
+
+.container-header {
+  position: relative;
+  z-index: 2;
+}
+
+#bgvideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.character {
+  border: 2px solid #ff2851;
+  border-radius: 15px;
+  background: linear-gradient(
+    to bottom,
+    rgb(244, 244, 244),
+    rgb(149, 149, 149)
+  );
+
+  background-image: url(./img/bg_big.png);
+  background-position: center center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 94px 135px 94px;
+  justify-items: center;
+  -webkit-box-shadow: 0px 0px 16px 6px #d56324ff,
+    0px 22px 16px 6px rgba(0, 0, 0, 0.76);
+  box-shadow: 0px 0px 16px 6px #d56324ff, 0px 22px 16px 6px rgba(0, 0, 0, 0.76);
+}
+
+img {
+  width: 200%;
+  height: auto;
+  grid-column: 2/3;
+  grid-row: 1/-1;
+  z-index: 2;
+}
+
+.valoIndex {
+  color: #c7f458ff;
+
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  letter-spacing: 0.125rem;
+  font-size: 2rem;
+  opacity: 0.75;
+}
+h2 {
+  position: relative;
+  font-family: "Tungsten";
+  font-weight: bold;
+  color: aliceblue;
+  font-size: 2rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  transform-origin: bottom left;
+  left: 1rem;
+  top: 2rem;
+}
+.agentName-container {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+}
